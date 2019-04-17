@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>在线翻译</h1>
+    <h2>zhe.wang</h2>
     <h5 class="text-muted">简单/易用/便捷</h5>
     <translateForm  v-on:formSubmit="translateText"></translateForm>
     <translateOutput v-text="translatedText"></translateOutput>
@@ -33,6 +34,13 @@ export default {
 </script>
 
 <style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .row{
+    margin: 0px;
+  }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
